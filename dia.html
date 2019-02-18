@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-419">
+  <head>
+    <style media="screen">
+      td{
+        text-align: center;
+        color: #56bcff;
+      }
+      body{
+        width: 100%;
+        height: 90%;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Horario Escolar del día</title>
+  </head>
+  <body background="fondo.png">
+    <center>
+    <h1>Horario Escolar del día</h1>
+    <p>Hoy es:</p>
+    <p id="fecha"></p>
+    <p>El día correspondiente para mañana es:</p>
+    <p id="dia"></p>
+    <table id="tabla" border="1">
+      <tr>
+        <th colspan="2">Hora</th>
+        <th>Día Hoy</th>
+        <th>Día Mañana</th>
+      </tr>
+      <tr>
+        <td>7:15 - 7:55</td>
+        <td>1</td>
+        <td>H. Comunicativas</td>
+        <td>H. Comunicativas</td>
+      </tr>
+      <tr>
+        <td>7:55 - 8:45</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>8:45 - 9:35</td>
+        <td>3</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>9:35 - 10:05</td>
+        <td>-</td>
+        <td colspan="2">Descanso</td>
+      </tr>
+      <tr>
+        <td>10:05 - 10:55</td>
+        <td>4</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>10:55 - 11:45</td>
+        <td>5</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>11:45 - 12:35</td>
+        <td>6</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>12:35 - 1:45</td>
+        <td>-</td>
+        <td colspan="2">Almuerzo</td>
+      </tr>
+      <tr>
+        <td>1:35 - 2:25</td>
+        <td>7</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>2:25 - 3:15</td>
+        <td>8</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <footer>
+    <p>Por favor seleccione una de las siguientes tres opciones:</p>
+    <table border="1">
+      <tr>
+        <td>
+        <button type="button" name="dia" onclick="location.href='https://ordonezgs.github.io/Horario/dia';">Ver el Horario del día</button>
+        </td>
+        <td>
+        <button type="button" name="index" onclick="location.href='https://ordonezgs.github.io/Horario';">Volver al Inicio</button>
+        </td>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <td>
+        <button type="button" name="completo" onclick="location.href='https://ordonezgs.github.io/Horario/completo';">Vel el Horario Completo</button>
+        </td>
+      </tr>
+    </table>
+    <p>©2019 Santiago G.</p></footer>
+    </center>
+    <script type="text/javascript" src="calculo.js"></script>
+  </body>
+</html>
