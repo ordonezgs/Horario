@@ -2,7 +2,7 @@
 <html lang="es-419">
   <head>
     <style media="screen">
-      #titulos{
+      .titulos{
         color:black;
         background-color: white;
       }
@@ -22,12 +22,17 @@
   <body background="img/fondo.png">
     <center>
     <h1>Horario Escolar del día</h1>
-    <p>Hoy es:</p>
-    <p id="fecha"></p>
-    <p>El día correspondiente para mañana es:</p>
-    <p id="dia"></p>
+    <p class="titulos">Hoy es:</p>
+    <p class="titulos" id="fecha"></p>
+    <p class="titulos">El día correspondiente para mañana es:</p>
+    <p class="titulos" id="dia"></p>
     <table id="tabla" border="1">
-      <tr id="titulos">
+      <tr>
+        <th colspan="2"></th>
+        <th>Hoy</th>
+        <th>Mañana</th>
+      </tr>
+      <tr class="titulos">
         <th colspan="2">Hora</th>
         <th id="1">Día Hoy</th>
         <th id="2">Día Mañana</th>
