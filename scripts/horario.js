@@ -1,3 +1,4 @@
+//Definiendo Horario por Dias
 var d1 ={
   h1: "Inglés",
   h2: "Inglés",
@@ -52,6 +53,7 @@ var d6 ={
   h6: "Inglés",
   h7: "Inglés"
 }
+//Definir Función
 
 function cargarHorario() {
   //Dia 1
@@ -102,4 +104,9 @@ function cargarHorario() {
   document.getElementById("c6l5").innerHTML = d6.h5
   document.getElementById("c6l6").innerHTML = d6.h6
   document.getElementById("c6l7").innerHTML = d6.h7
+  //
+  return;
 }
+
+//Cargar Horario Completo de Dias
+cargarHorario();
