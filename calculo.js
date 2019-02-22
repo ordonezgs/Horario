@@ -22,7 +22,7 @@ function getDayNumber(baseDate, targetDate, daysInCycle) {
     var differenceInDays = Math.round((startOfTargetDate - startOfBaseDate) / 864e5);
     return ((differenceInDays % daysInCycle + daysInCycle) % daysInCycle) + 1;
 }
-var diact = getDayNumber(new Date(2019, 1, 18), new Date(yyyy, mm1, dd), 6)
+var diact = getDayNumber(new Date(2019, 1, 20), new Date(yyyy, mm1, dd), 6)
 document.getElementById("fecha").innerHTML = hoy + " Correspondiente a día " + diact;
 document.getElementById("dia").innerHTML = diact + 1
 if (diact < 6) {
@@ -198,6 +198,7 @@ switch (diact) {
   default:
     let dano = "DAÑO"
     document.getElementById("1").innerHTML = dano
+    document.getElementById("2").innerHTML = dano
     document.getElementById("c1l1").innerHTML = dano
     document.getElementById("c1l2").innerHTML = dano
     document.getElementById("c1l3").innerHTML = dano
