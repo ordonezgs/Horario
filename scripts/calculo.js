@@ -52,8 +52,8 @@ var d2 ={
 var d3 ={
   h1: "Edu. Física",
   h2: "Edu. Física",
-  h3: "Estadistica/<br>Geometria",
-  h4: "Estadistica/<br>Geometria",
+  h3: "Estadistica/Geometria",
+  h4: "Estadistica/Geometria",
   h5: "Física",
   h6: "Inglés",
   h7: "Inglés"
@@ -68,8 +68,8 @@ var d4 ={
   h7: "Inglés"
 }
 var d5 ={
-  h1: "Sociales/<br>Catedra",
-  h2: "Sociales/<br>Catedra",
+  h1: "Sociales/Catedra",
+  h2: "Sociales/Catedra",
   h3: "Música",
   h4: "Música",
   h5: "Filosofía",
