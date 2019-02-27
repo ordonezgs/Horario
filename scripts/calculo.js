@@ -24,12 +24,12 @@ function getDayNumber(baseDate, targetDate, daysInCycle) {
 }
 var diact = getDayNumber(new Date(2019, 1, 20), new Date(yyyy, mm1, dd), 6)
 document.getElementById("fecha").innerHTML = hoy + " Correspondiente a día " + diact;
-document.getElementById("dia").innerHTML = diact + 1
 if (diact < 6) {
   diasig = diact + 1
 } else {
   diasig = diact - 5
 }
+document.getElementById("dia").innerHTML = diasig
 //Definir Materias de Día
 var d1 ={
   h1: "Inglés",
