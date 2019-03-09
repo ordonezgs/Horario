@@ -15,14 +15,14 @@ if (mm < 10) {
 
 hoy = dd + "/" + mm + "/" + yyyy;
 //Fin
-var actual = yyyy + "," + mm1 + ", " + dd
+var actual = yyyy + ", " + mm1 + ", " + dd
 function getDayNumber(baseDate, targetDate, daysInCycle) {
     var startOfBaseDate = new Date(baseDate).setHours(0, 0, 0, 0);
     var startOfTargetDate = new Date(targetDate).setHours(0, 0, 0, 0);
     var differenceInDays = Math.round((startOfTargetDate - startOfBaseDate) / 864e5);
     return ((differenceInDays % daysInCycle + daysInCycle) % daysInCycle) + 1;
 }
-var diact = getDayNumber(new Date(2019, 2, 29), new Date(yyyy, mm1, dd), 6)
+var diact = getDayNumber(new Date(2019, 2, 29), new Date(actual), 6)
 document.getElementById("fecha").innerHTML = hoy + " Correspondiente a día " + diact;
 if (diact < 6) {
   diasig = diact + 1
