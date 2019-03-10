@@ -15,7 +15,7 @@ if (mm < 10) {
 
 hoy = dd + "/" + mm + "/" + yyyy;
 //Fin
-var actual = yyyy + ", " + mm1 + ", " + dd
+var actual = yyyy, mm1, dd
 function getDayNumber(baseDate, targetDate, daysInCycle) {
     var startOfBaseDate = new Date(baseDate).setHours(0, 0, 0, 0);
     var startOfTargetDate = new Date(targetDate).setHours(0, 0, 0, 0);
