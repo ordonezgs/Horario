@@ -206,7 +206,6 @@ switch (diact) {
     document.getElementById("c1l5").innerHTML = dano
     document.getElementById("c1l6").innerHTML = dano
     document.getElementById("c1l7").innerHTML = dano
-    document.getElementById("c1l8").innerHTML = dano
     document.getElementById("c2l1").innerHTML = dano
     document.getElementById("c2l2").innerHTML = dano
     document.getElementById("c2l3").innerHTML = dano
@@ -214,5 +213,4 @@ switch (diact) {
     document.getElementById("c2l5").innerHTML = dano
     document.getElementById("c2l6").innerHTML = dano
     document.getElementById("c2l7").innerHTML = dano
-    document.getElementById("c2l8").innerHTML = dano
 }
