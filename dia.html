@@ -2,11 +2,15 @@
 <html lang="es-419">
   <head>
     <style media="screen">
+      p{
+        background-color: white;
+        width: 20%;
+      }
       .titulos{
         color:black;
         background-color: white;
       }
-      td, th{
+      td,th{
         text-align: center;
         color: black;
         background-color: white;
@@ -19,13 +23,15 @@
     <meta charset="utf-8">
     <title>Horario Escolar del día</title>
   </head>
-  <body background="img/fondo.jpg">
+  <body background="fondo.jpg">
     <center>
-    <h1>Horario Escolar del día</h1>
-    <p>Hoy es:</p>
-    <p id="fecha"></p>
-    <p>El día correspondiente para mañana es:</p>
-    <p id="dia"></p>
+    <div class="">
+      <h1>Horario Escolar del día</h1>
+      <p>Hoy es:</p>
+      <p id="fecha"></p>
+      <p>El día correspondiente para mañana es:</p>
+      <p id="dia"></p>
+    </div>
     <table id="tabla" border="1">
       <tr>
         <th colspan="2"></th>
@@ -112,8 +118,9 @@
         </td>
       </tr>
     </table>
-    <p>©2019 Santiago G. - Alcalde 11ºC</p></footer>
+    <p>©2019 Santiago G. - Alcalde 11ºC</p>
+    </footer>
     </center>
-    <script type="text/javascript" src="scripts/calculo.js"></script>
+    <script type="text/javascript" src="calculo.js"></script>
   </body>
 </html>
