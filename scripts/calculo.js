@@ -226,11 +226,22 @@ function cambiarHoy(texto) {
   document.getElementById("c1l6").innerHTML = texto
   document.getElementById("c1l7").innerHTML = texto
 }
+function cambiarMañana(texto) {
+  document.getElementById("2").innerHTML = texto
+  document.getElementById("c2l1").innerHTML = texto
+  document.getElementById("c2l2").innerHTML = texto
+  document.getElementById("c2l3").innerHTML = texto
+  document.getElementById("c2l4").innerHTML = texto
+  document.getElementById("c2l5").innerHTML = texto
+  document.getElementById("c2l6").innerHTML = texto
+  document.getElementById("c2l7").innerHTML = texto
+}
 var diaSemana = moment().format('dddd')
 console.log(diaSemana);
 switch (diaSemana) {
   case "Saturday":
     cambiarHoy("Sábado")
+    cambiarMañana("Domingo")
     break;
   case "Sunday":
     cambiarHoy("Domingo")
