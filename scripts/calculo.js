@@ -214,3 +214,27 @@ switch (diact) {
     document.getElementById("c2l6").innerHTML = dano
     document.getElementById("c2l7").innerHTML = dano
 }
+
+//Definir si es Sábado o Domingo
+function cambiarHoy(texto) {
+  document.getElementById("1").innerHTML = texto
+  document.getElementById("c1l1").innerHTML = texto
+  document.getElementById("c1l2").innerHTML = texto
+  document.getElementById("c1l3").innerHTML = texto
+  document.getElementById("c1l4").innerHTML = texto
+  document.getElementById("c1l5").innerHTML = texto
+  document.getElementById("c1l6").innerHTML = texto
+  document.getElementById("c1l7").innerHTML = texto
+}
+var diaSemana = moment().format('dddd')
+console.log(diaSemana);
+switch (diaSemana) {
+  case "Saturday":
+    cambiarHoy("Sábado")
+    break;
+  case "Sunday":
+    cambiarHoy("Domingo")
+    break;
+  default:
+
+}
