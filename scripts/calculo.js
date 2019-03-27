@@ -33,10 +33,10 @@ document.getElementById("dia").innerHTML = diasig
 //Definir Materias de Día
 var d1 ={
   h1: "Inglés",
-  h2: "X2",
+  h2: "x2",
   h3: "Español",
   h4: "Informatica",
-  h5: "X2",
+  h5: "x2",
   h6: "Química",
   h7: "Biología"
 }
@@ -44,37 +44,37 @@ var d2 ={
   h1: "Matematicas",
   h2: "Religión",
   h3: "Español",
-  h4: "X2",
+  h4: "x2",
   h5: "Física",
   h6: "Química",
-  h7: "X2"
+  h7: "x2"
 }
 var d3 ={
   h1: "Edu. Física",
-  h2: "X2",
+  h2: "x2",
   h3: "Estadistica/Geometria",
-  h4: "X2",
+  h4: "x2",
   h5: "Física",
   h6: "Inglés",
-  h7: "X2"
+  h7: "x2"
 }
 var d4 ={
   h1: "Dir. Curso",
   h2: "Investigación",
   h3: "Matematicas",
   h4: "Física",
-  h5: "X2",
+  h5: "x2",
   h6: "Inglés",
-  h7: "X2"
+  h7: "x2"
 }
 var d5 ={
   h1: "Sociales/Catedra",
-  h2: "X2",
+  h2: "x2",
   h3: "Música",
-  h4: "X2",
+  h4: "x2",
   h5: "Filosofía",
   h6: "Matematicas",
-  h7: "X2"
+  h7: "x2"
 }
 var d6 ={
   h1: "Español",
@@ -83,7 +83,7 @@ var d6 ={
   h4: "Etica",
   h5: "Química",
   h6: "Inglés",
-  h7: "X2"
+  h7: "x2"
 }
 switch (diact) {
   case 1:
