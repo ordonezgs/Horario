@@ -214,13 +214,24 @@ switch (mes >= 03) {
     var dian2 = 1
     obtenerHorario(d6, d1)
     mostrarDatos()
-    alert("Hoy se acaba el ciclo 7 \ny \nEl 1 (primer) periodo")
     break;
   default:
   alerta()
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
 }
+//Avisos varios
+if (moment().locale('es').format('L') == "03/04/2019") {
+  alert("Hoy se acaba el primer periodo")
+}else if (moment().locale('es').format('L') == "02/04/2019" || moment().locale('es').format('L') == "03/04/2019") {
+  alert("Hoy son institucionales")
+  cambiarHoy("Institucionales")
+  cambiarMañana("Institucionales")
+}else if (moment().locale('es').format('L') == "01/04/2019") {
+  alert("Mañana son Institucionales")
+}
+//Fin Avisos Varios.
+
 //
 // console.log(diaSemana);
 var diaSemana = moment().format('dddd')
