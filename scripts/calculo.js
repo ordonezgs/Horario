@@ -169,42 +169,47 @@ function obtenerHorario (hoy, man){
     document.getElementById("c2l7").innerHTML = texto
     return
   }
+  function alerta() {
+    if (!(diaSemana == "Saturday" || diaSemana == "Sunday")) {
+      alert("Se necesita arreglo, el horario está desconfigurado")
+    }
+  }
 console.log("El Mes Actual es: " + moment().format('MM'));
 var mes = Number(moment().format('MM'))
 var dia = Number(moment().format('DD'))
-console.log(typeof mes)
+// Define que tipo de variables es   ------>   console.log(typeof mes)
 switch (mes >= 03) {
-  case (mes == 03 && dia == 27):
+  case ((mes == 03 && dia == 27) || (mes == 04 && dia == 04) || (mes == 04 && dia == 22) || (mes == 04 && dia == 30) || (mes == 05 && dia == 09) || (mes == 05 && dia == 22) || (mes == 05 && dia == 30) || (mes == 06 && dia == 10) || (mes == 06 && dia == 18) || (mes == 07 && dia == 18) || (mes == 07 && dia == 26) || (mes == 08 && dia == 05) || (mes == 08 && dia == 14) || (mes == 08 && dia == 23) || (mes == 09 && dia == 02) || (mes == 09 && dia == 16) || (mes == 09 && dia == 24) || (mes == 10 && dia == 10) || (mes == 10 && dia == 18) || (mes == 10 && dia == 28) || (mes == 11 && dia == 06)):
     var dian1 = 1
     var dian2 = 2
     obtenerHorario(d1, d2)
     mostrarDatos()
     break;
-  case (mes == 03 && dia == 28):
+  case ((mes == 03 && dia == 28) || (mes == 04 && dia == 08) || (mes == 04 && dia == 23) || (mes == 05 && dia == 02) || (mes == 05 && dia == 10) || (mes == 05 && dia == 23) || (mes == 05 && dia == 31) || (mes == 06 && dia == 11) || (mes == 06 && dia == 19) || (mes == 07 && dia == 19) || (mes == 07 && dia == 29) || (mes == 08 && dia == 06) || (mes == 08 && dia == 15) || (mes == 08 && dia == 26) || (mes == 09 && dia == 03) || (mes == 09 && dia == 17) || (mes == 09 && dia == 25) || (mes == 10 && dia == 03) || (mes == 10 && dia == 21) || (mes == 10 && dia == 29) || (mes == 11 && dia == 07)):
     var dian1 = 2
     var dian2 = 3
     obtenerHorario(d2, d3)
     mostrarDatos()
     break;
-  case (mes == 03 && dia == 29):
+  case ((mes == 03 && dia == 29) || (mes == 04 && dia == 09) || (mes == 04 && dia == 24) || (mes == 05 && dia == 03) || (mes == 05 && dia == 16) || (mes == 05 && dia == 24) || (mes == 06 && dia == 04) || (mes == 06 && dia == 12) || (mes == 06 && dia == 20) || (mes == 07 && dia == 22) || (mes == 07 && dia == 30) || (mes == 08 && dia == 08) || (mes == 08 && dia == 16) || (mes == 08 && dia == 27) || (mes == 09 && dia == 04) || (mes == 09 && dia == 18) || (mes == 09 && dia == 26) || (mes == 10 && dia == 04) || (mes == 10 && dia == 22) || (mes == 10 && dia == 30) || (mes == 11 && dia == 08)):
     var dian1 = 3
     var dian2 = 4
     obtenerHorario(d3, d4)
     mostrarDatos()
     break;
-  case (mes == 04 && dia == 01):
+  case ((mes == 04 && dia == 01) || (mes == 04 && dia == 10) || (mes == 04 && dia == 25) || (mes == 05 && dia == 06) || (mes == 05 && dia == 17) || (mes == 05 && dia == 27) || (mes == 06 && dia == 05) || (mes == 06 && dia == 13) || (mes == 07 && dia == 15) || (mes == 07 && dia == 23) || (mes == 07 && dia == 31) || (mes == 08 && dia == 09) || (mes == 08 && dia == 20) || (mes == 08 && dia == 28) || (mes == 09 && dia == 05) || (mes == 09 && dia == 19) || (mes == 09 && dia == 27) || (mes == 10 && dia == 15) || (mes == 10 && dia == 23) || (mes == 10 && dia == 31) || (mes == 11 && dia == 12)):
     var dian1 = 4
     var dian2 = 5
     obtenerHorario(d4, d5)
     mostrarDatos()
     break;
-  case (mes == 04 && dia == 02):
+  case ((mes == 04 && dia == 02) || (mes == 04 && dia == 11) || (mes == 04 && dia == 26) || (mes == 05 && dia == 07) || (mes == 05 && dia == 20) || (mes == 06 && dia == 14) || (mes == 07 && dia == 16) || (mes == 07 && dia == 24) || (mes == 08 && dia == 01) || (mes == 08 && dia == 12) || (mes == 08 && dia == 21) || (mes == 08 && dia == 29) || (mes == 09 && dia == 06) || (mes == 09 && dia == 20) || (mes == 09 && dia == 30) || (mes == 10 && dia == 16) || (mes == 10 && dia == 24) || (mes == 11 && dia == 01) || (mes == 11 && dia == 13)):
     var dian1 = 5
     var dian2 = 6
     obtenerHorario(d5, d6)
     mostrarDatos()
     break;
-  case (mes == 04 && dia == 03):
+  case ((mes == 04 && dia == 03) || (mes == 04 && dia == 12) || (mes == 04 && dia == 29) || (mes == 05 && dia == 08) || (mes == 05 && dia == 21) || (mes == 05 && dia == 29) || (mes == 06 && dia == 07) || (mes == 06 && dia == 17) || (mes == 07 && dia == 17) || (mes == 07 && dia == 25) || (mes == 08 && dia == 02) || (mes == 08 && dia == 13) || (mes == 08 && dia == 22) || (mes == 08 && dia == 30) || (mes == 09 && dia == 09) || (mes == 09 && dia == 16) || (mes == 10 && dia == 01) || (mes == 10 && dia == 17) || (mes == 10 && dia == 25) || (mes == 11 && dia == 05) || (mes == 11 && dia == 14)) :
     var dian1 = 6
     var dian2 = 1
     obtenerHorario(d6, d1)
@@ -212,7 +217,7 @@ switch (mes >= 03) {
     alert("Hoy se acaba el ciclo 7 \ny \nEl 1 (primer) periodo")
     break;
   default:
-  alert("Se necesita arreglo, el horario está desconfigurado")
+  alerta()
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
 }
@@ -220,6 +225,9 @@ switch (mes >= 03) {
 // console.log(diaSemana);
 var diaSemana = moment().format('dddd')
 switch (diaSemana) {
+  case "Friday":
+    cambiarMañana("Sábado")
+    break;
   case "Saturday":
     cambiarHoy("Sábado")
     cambiarMañana("Domingo")
@@ -229,15 +237,3 @@ switch (diaSemana) {
     break;
   default:
 }
-
-//Calcular los siguientes días.
-
-
-  // alert(
-  //   "El valor para el día 25 es:\n"
-  //  + getDayNumber(new Date(2019, 3, 21), new Date(2019, 3, 25), 6)
-  //  + "\n" + "El valor para el día 26 es: \n"
-  //  + getDayNumber(new Date(2019, 3, 21), new Date(2019, 3, 26), 6)
-  // )
-
-//
