@@ -179,37 +179,37 @@ var mes = Number(moment().format('MM'))
 var dia = Number(moment().format('DD'))
 // Define que tipo de variables es   ------>   console.log(typeof mes)
 switch (mes >= 03) {
-  case ((mes == 03 && dia == 27) || (mes == 04 && dia == 04) || (mes == 04 && dia == 22) || (mes == 04 && dia == 30) || (mes == 05 && dia == 09) || (mes == 05 && dia == 22) || (mes == 05 && dia == 30) || (mes == 06 && dia == 10) || (mes == 06 && dia == 18) || (mes == 07 && dia == 18) || (mes == 07 && dia == 26) || (mes == 08 && dia == 05) || (mes == 08 && dia == 14) || (mes == 08 && dia == 23) || (mes == 09 && dia == 02) || (mes == 09 && dia == 16) || (mes == 09 && dia == 24) || (mes == 10 && dia == 10) || (mes == 10 && dia == 18) || (mes == 10 && dia == 28) || (mes == 11 && dia == 06)):
+  case ((mes == 03 && dia == 27) || (mes == 04 && dia == 04) || (mes == 04 && dia == 22) || (mes == 04 && dia == 30) || (mes == 05 && dia == 09) || (mes == 05 && dia == 22) || (mes == 05 && dia == 30) || (mes == 06 && dia == 10) || (mes == 06 && dia == 18) || (mes == 07 && dia == 18) || (mes == 07 && dia == 26) || (mes == 08 && dia == 05) || (mes == 08 && dia == 14) || (mes == 08 && dia == 23) || (mes == 09 && dia == 02) || (mes == 09 && dia == 16) || (mes == 09 && dia == 24) || (mes == 10 && dia == 10) || (mes == 10 && dia == 18) || (mes == 10 && dia == 28) || (mes == 11 && dia == 06) /*Domingos*/|| (mes == 04 && dia == 07) || (mes == 06 && dia == 28) || (mes == 07 && dia == 28) || (mes == 08 && dia == 25) || (mes == 10 && dia == 20)):
     var dian1 = 1
     var dian2 = 2
     obtenerHorario(d1, d2)
     mostrarDatos()
     break;
-  case ((mes == 03 && dia == 28) || (mes == 04 && dia == 08) || (mes == 04 && dia == 23) || (mes == 05 && dia == 02) || (mes == 05 && dia == 10) || (mes == 05 && dia == 23) || (mes == 05 && dia == 31) || (mes == 06 && dia == 11) || (mes == 06 && dia == 19) || (mes == 07 && dia == 19) || (mes == 07 && dia == 29) || (mes == 08 && dia == 06) || (mes == 08 && dia == 15) || (mes == 08 && dia == 26) || (mes == 09 && dia == 03) || (mes == 09 && dia == 17) || (mes == 09 && dia == 25) || (mes == 10 && dia == 03) || (mes == 10 && dia == 21) || (mes == 10 && dia == 29) || (mes == 11 && dia == 07)):
+  case ((mes == 03 && dia == 28) || (mes == 04 && dia == 08) || (mes == 04 && dia == 23) || (mes == 05 && dia == 02) || (mes == 05 && dia == 10) || (mes == 05 && dia == 23) || (mes == 05 && dia == 31) || (mes == 06 && dia == 11) || (mes == 06 && dia == 19) || (mes == 07 && dia == 19) || (mes == 07 && dia == 29) || (mes == 08 && dia == 06) || (mes == 08 && dia == 15) || (mes == 08 && dia == 26) || (mes == 09 && dia == 03) || (mes == 09 && dia == 17) || (mes == 09 && dia == 25) || (mes == 10 && dia == 03) || (mes == 10 && dia == 21) || (mes == 10 && dia == 29) || (mes == 11 && dia == 07) /*Domingos*/|| (mes == 05 && dia == 15) || (mes == 06 && dia == 03) || (mes == 06 && dia == 21) || (mes == 07 && dia == 21)):
     var dian1 = 2
     var dian2 = 3
     obtenerHorario(d2, d3)
     mostrarDatos()
     break;
-  case ((mes == 03 && dia == 29) || (mes == 04 && dia == 09) || (mes == 04 && dia == 24) || (mes == 05 && dia == 03) || (mes == 05 && dia == 16) || (mes == 05 && dia == 24) || (mes == 06 && dia == 04) || (mes == 06 && dia == 12) || (mes == 06 && dia == 20) || (mes == 07 && dia == 22) || (mes == 07 && dia == 30) || (mes == 08 && dia == 08) || (mes == 08 && dia == 16) || (mes == 08 && dia == 27) || (mes == 09 && dia == 04) || (mes == 09 && dia == 18) || (mes == 09 && dia == 26) || (mes == 10 && dia == 04) || (mes == 10 && dia == 22) || (mes == 10 && dia == 30) || (mes == 11 && dia == 08)):
+  case ((mes == 03 && dia == 29) || (mes == 04 && dia == 09) || (mes == 04 && dia == 24) || (mes == 05 && dia == 03) || (mes == 05 && dia == 16) || (mes == 05 && dia == 24) || (mes == 06 && dia == 04) || (mes == 06 && dia == 12) || (mes == 06 && dia == 20) || (mes == 07 && dia == 22) || (mes == 07 && dia == 30) || (mes == 08 && dia == 08) || (mes == 08 && dia == 16) || (mes == 08 && dia == 27) || (mes == 09 && dia == 04) || (mes == 09 && dia == 18) || (mes == 09 && dia == 26) || (mes == 10 && dia == 04) || (mes == 10 && dia == 22) || (mes == 10 && dia == 30) || (mes == 11 && dia == 08) /*Domingos*/ || (mes == 03 && dia == 31) || (mes == 05 && dia == 05) || (mes == 05 && dia == 26) || (mes == 07 && dia == 14) || (mes == 08 && dia == 19) || (mes == 10 && dia == 14) || (mes == 11 && dia == 11)):
     var dian1 = 3
     var dian2 = 4
     obtenerHorario(d3, d4)
     mostrarDatos()
     break;
-  case ((mes == 04 && dia == 01) || (mes == 04 && dia == 10) || (mes == 04 && dia == 25) || (mes == 05 && dia == 06) || (mes == 05 && dia == 17) || (mes == 05 && dia == 27) || (mes == 06 && dia == 05) || (mes == 06 && dia == 13) || (mes == 07 && dia == 15) || (mes == 07 && dia == 23) || (mes == 07 && dia == 31) || (mes == 08 && dia == 09) || (mes == 08 && dia == 20) || (mes == 08 && dia == 28) || (mes == 09 && dia == 05) || (mes == 09 && dia == 19) || (mes == 09 && dia == 27) || (mes == 10 && dia == 15) || (mes == 10 && dia == 23) || (mes == 10 && dia == 31) || (mes == 11 && dia == 12)):
+  case ((mes == 04 && dia == 01) || (mes == 04 && dia == 10) || (mes == 04 && dia == 25) || (mes == 05 && dia == 06) || (mes == 05 && dia == 17) || (mes == 05 && dia == 27) || (mes == 06 && dia == 05) || (mes == 06 && dia == 13) || (mes == 07 && dia == 15) || (mes == 07 && dia == 23) || (mes == 07 && dia == 31) || (mes == 08 && dia == 09) || (mes == 08 && dia == 20) || (mes == 08 && dia == 28) || (mes == 09 && dia == 05) || (mes == 09 && dia == 19) || (mes == 09 && dia == 27) || (mes == 10 && dia == 15) || (mes == 10 && dia == 23) || (mes == 10 && dia == 31) || (mes == 11 && dia == 12) /*Domingos*/||(mes == 05 && dia == 19) || (mes == 08 && dia == 11) || (mes == 09 && dia == 29)):
     var dian1 = 4
     var dian2 = 5
     obtenerHorario(d4, d5)
     mostrarDatos()
     break;
-  case ((mes == 04 && dia == 02) || (mes == 04 && dia == 11) || (mes == 04 && dia == 26) || (mes == 05 && dia == 07) || (mes == 05 && dia == 20) || (mes == 06 && dia == 14) || (mes == 07 && dia == 16) || (mes == 07 && dia == 24) || (mes == 08 && dia == 01) || (mes == 08 && dia == 12) || (mes == 08 && dia == 21) || (mes == 08 && dia == 29) || (mes == 09 && dia == 06) || (mes == 09 && dia == 20) || (mes == 09 && dia == 30) || (mes == 10 && dia == 16) || (mes == 10 && dia == 24) || (mes == 11 && dia == 01) || (mes == 11 && dia == 13)):
+  case ((mes == 04 && dia == 02) || (mes == 04 && dia == 11) || (mes == 04 && dia == 26) || (mes == 05 && dia == 07) || (mes == 05 && dia == 20) || (mes == 06 && dia == 14) || (mes == 07 && dia == 16) || (mes == 07 && dia == 24) || (mes == 08 && dia == 01) || (mes == 08 && dia == 12) || (mes == 08 && dia == 21) || (mes == 08 && dia == 29) || (mes == 09 && dia == 06) || (mes == 09 && dia == 20) || (mes == 09 && dia == 30) || (mes == 10 && dia == 16) || (mes == 10 && dia == 24) || (mes == 11 && dia == 01) || (mes == 11 && dia == 13) /*Domingos*/|| (mes == 04 && dia == 28) || (mes == 06 && dia == 16) || (mes == 09 && dia == 08) || (mes == 09 && dia == 22) || (mes == 11 && dia == 04)):
     var dian1 = 5
     var dian2 = 6
     obtenerHorario(d5, d6)
     mostrarDatos()
     break;
-  case ((mes == 04 && dia == 03) || (mes == 04 && dia == 12) || (mes == 04 && dia == 29) || (mes == 05 && dia == 08) || (mes == 05 && dia == 21) || (mes == 05 && dia == 29) || (mes == 06 && dia == 07) || (mes == 06 && dia == 17) || (mes == 07 && dia == 17) || (mes == 07 && dia == 25) || (mes == 08 && dia == 02) || (mes == 08 && dia == 13) || (mes == 08 && dia == 22) || (mes == 08 && dia == 30) || (mes == 09 && dia == 09) || (mes == 09 && dia == 16) || (mes == 10 && dia == 01) || (mes == 10 && dia == 17) || (mes == 10 && dia == 25) || (mes == 11 && dia == 05) || (mes == 11 && dia == 14)) :
+  case ((mes == 04 && dia == 03) || (mes == 04 && dia == 12) || (mes == 04 && dia == 29) || (mes == 05 && dia == 08) || (mes == 05 && dia == 21) || (mes == 05 && dia == 29) || (mes == 06 && dia == 07) || (mes == 06 && dia == 17) || (mes == 07 && dia == 17) || (mes == 07 && dia == 25) || (mes == 08 && dia == 02) || (mes == 08 && dia == 13) || (mes == 08 && dia == 22) || (mes == 08 && dia == 30) || (mes == 09 && dia == 09) || (mes == 09 && dia == 16) || (mes == 10 && dia == 01) || (mes == 10 && dia == 17) || (mes == 10 && dia == 25) || (mes == 11 && dia == 05) || (mes == 11 && dia == 14) /*Domingos*/|| (mes == 04 && dia == 21) || (mes == 06 && dia == 09) || (mes == 08 && dia == 04) || (mes == 09 && dia == 01) || (mes == 09 && dia == 15) || (mes == 10 && dia == 27)) :
     var dian1 = 6
     var dian2 = 1
     obtenerHorario(d6, d1)
