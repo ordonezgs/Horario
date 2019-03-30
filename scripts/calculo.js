@@ -216,7 +216,9 @@ switch (mes >= 03) {
     mostrarDatos()
     break;
   default:
-  alerta()
+  window.onload = function() {
+  alerta();
+  }
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
 }
