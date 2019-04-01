@@ -240,13 +240,17 @@ var diaSemana = moment().format('dddd')
 switch (diaSemana) {
   case "Friday":
     cambiarMañana("Sábado")
+    document.getElementById("Hcom2").innerHTML = "Sábado"
     break;
   case "Saturday":
     cambiarHoy("Sábado")
     cambiarMañana("Domingo")
+    document.getElementById("Hcom1").innerHTML = "Sábado"
+    document.getElementById("Hcom2").innerHTML = "Domingo"
     break;
   case "Sunday":
     cambiarHoy("Domingo")
+    document.getElementById("Hcom1").innerHTML = "Domingo"
     break;
   default:
 }
