@@ -148,6 +148,7 @@ function obtenerHorario (hoy, man){
 }
   //Definir si es Sábado o Domingo
   function cambiarHoy(texto) {
+    document.getElementById("Hcom1").innerHTML = texto
     document.getElementById("1").innerHTML = texto
     document.getElementById("c1l1").innerHTML = texto
     document.getElementById("c1l2").innerHTML = texto
@@ -159,6 +160,7 @@ function obtenerHorario (hoy, man){
     return
   }
   function cambiarMañana(texto) {
+    document.getElementById("Hcom2").innerHTML = texto
     document.getElementById("2").innerHTML = texto
     document.getElementById("c2l1").innerHTML = texto
     document.getElementById("c2l2").innerHTML = texto
@@ -240,17 +242,13 @@ var diaSemana = moment().format('dddd')
 switch (diaSemana) {
   case "Friday":
     cambiarMañana("Sábado")
-    document.getElementById("Hcom2").innerHTML = "     Sábado     "
     break;
   case "Saturday":
     cambiarHoy("Sábado")
     cambiarMañana("Domingo")
-    document.getElementById("Hcom1").innerHTML = "     Sábado     "
-    document.getElementById("Hcom2").innerHTML = "     Domingo    "
     break;
   case "Sunday":
     cambiarHoy("Domingo")
-    document.getElementById("Hcom1").innerHTML = "     Domingo    "
     break;
   default:
 }
