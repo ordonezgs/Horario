@@ -26,7 +26,7 @@ h1{
 @media screen and (max-width: 414px) {
     p{
        background-color: white;
-       width: 110%;
+       width: 360px;
        text-align: left;
        font-size: 85%;
     }
@@ -43,6 +43,7 @@ h1{
     body{
     	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
     	height: 90%;
+    	background-color: black;
     }
     h1{
     	background-color: orange;
@@ -50,5 +51,8 @@ h1{
     }
     button{
     	font-size: 75%;
+    }
+    .opciones{
+    	font-size: 80%;
     }
 }
