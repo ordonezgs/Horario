@@ -176,6 +176,67 @@ function obtenerHorario (hoy, man){
       alert("Se necesita arreglo, el horario está desconfigurado")
     }
   }
+  function obtenerCiclo() {
+    function nCiclo(texto1) {
+      document.getElementById("ciclo").innerHTML = "Estamos en el ciclo: " + texto1
+      return
+    }
+    switch (true) {
+      case (mes <= 6):
+        //Periodo 2
+        if (moment().startOf('day').isSameOrBefore('2019-04-21')) {
+          nCiclo("1")
+        } else if (moment().startOf('day').isSameOrBefore('2019-04-29')) {
+          nCiclo("2")
+        } else if (moment().startOf('day').isSameOrBefore('2019-05-08')) {
+          nCiclo("3")
+        } else if (moment().startOf('day').isSameOrBefore('2019-05-21')) {
+          nCiclo("4")
+        } else if (moment().startOf('day').isSameOrBefore('2019-05-29')) {
+          nCiclo("5")
+        } else if (moment().startOf('day').isSameOrBefore('2019-06-09')) {
+          nCiclo("6")
+        } else if (moment().startOf('day').isSameOrBefore('2019-06-17')) {
+          nCiclo("7")
+        }
+        break;
+      case (mes <= 09):
+        //Periodo 3
+        if (moment().startOf('day').isSameOrBefore('2019-07-17')) {
+          nCiclo("1")
+        } else if (moment().startOf('day').isSameOrBefore('2019-07-25')) {
+          nCiclo("2")
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-04')) {
+          nCiclo("3")
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-13')) {
+          nCiclo("4")
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-22')) {
+          nCiclo("5")
+        } else if (moment().startOf('day').isSameOrBefore('2019-09-01')) {
+          nCiclo("6")
+        } else if (moment().startOf('day').isSameOrBefore('2019-09-09')) {
+          nCiclo("7")
+        }
+        break;
+      case (mes <= 11):
+        //Periodo 4
+        if (moment().startOf('day').isSameOrBefore('2019-09-23')) {
+          nCiclo("1")
+        } else if (moment().startOf('day').isSameOrBefore('2019-10-01')) {
+          nCiclo("2")
+        } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
+          nCiclo("3")
+        } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
+          nCiclo("4")
+        } else if (moment().startOf('day').isSameOrBefore('2019-10-27')) {
+          nCiclo("5")
+        } else if (moment().startOf('day').isSameOrBefore('2019-11-05')) {
+          nCiclo("6")
+        } // No hay ciclo 7 en el 4to Periodo
+        break;
+      default:
+    }
+}
 console.log("El Mes Actual es: " + moment().format('MM'));
 var mes = Number(moment().format('MM'))
 var dia = Number(moment().format('DD'))
@@ -224,6 +285,9 @@ switch (mes >= 03) {
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
 }
+//Obtener Ciclos
+obtenerCiclo()
+//Fin Obtener Ciclos
 //Avisos varios
 if (moment().locale('es').format('L') == "03/04/2019") {
   alert("Hoy se acaba el primer periodo")
