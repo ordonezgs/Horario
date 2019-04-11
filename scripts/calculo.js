@@ -185,72 +185,52 @@ function obtenerHorario (hoy, man){
       case (mes <= 6):
         //Periodo 2
         if (moment().startOf('day').isSameOrBefore('2019-04-21')) {
-          var ciclo = 1
           nCiclo("1")
         } else if (moment().startOf('day').isSameOrBefore('2019-04-29')) {
-          var ciclo = 2
           nCiclo("2")
         } else if (moment().startOf('day').isSameOrBefore('2019-05-08')) {
-          var ciclo = 3
           nCiclo("3")
         } else if (moment().startOf('day').isSameOrBefore('2019-05-21')) {
-          var ciclo = 4
           nCiclo("4")
         } else if (moment().startOf('day').isSameOrBefore('2019-05-29')) {
-          var ciclo = 5
           nCiclo("5")
         } else if (moment().startOf('day').isSameOrBefore('2019-06-09')) {
-          var ciclo = 6
           nCiclo("6")
         } else if (moment().startOf('day').isSameOrBefore('2019-06-17')) {
-          var ciclo = 7
           nCiclo("7")
         }
         break;
       case (mes <= 09):
         //Periodo 3
         if (moment().startOf('day').isSameOrBefore('2019-07-17')) {
-          var ciclo = 1
           nCiclo("1")
         } else if (moment().startOf('day').isSameOrBefore('2019-07-25')) {
-          var ciclo = 2
           nCiclo("2")
         } else if (moment().startOf('day').isSameOrBefore('2019-08-04')) {
-          var ciclo = 3
           nCiclo("3")
         } else if (moment().startOf('day').isSameOrBefore('2019-08-13')) {
-          var ciclo = 4
           nCiclo("4")
         } else if (moment().startOf('day').isSameOrBefore('2019-08-22')) {
-          var ciclo = 5
           nCiclo("5")
         } else if (moment().startOf('day').isSameOrBefore('2019-09-01')) {
-          var ciclo = 6
           nCiclo("6")
         } else if (moment().startOf('day').isSameOrBefore('2019-09-09')) {
-          var ciclo = 7
           nCiclo("7")
         }
         break;
       case (mes <= 11):
         //Periodo 4
         if (moment().startOf('day').isSameOrBefore('2019-09-23')) {
-          var ciclo = 1
           nCiclo("1")
         } else if (moment().startOf('day').isSameOrBefore('2019-10-01')) {
-          var ciclo = 2
           nCiclo("2")
         } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
-          var ciclo = 3
           nCiclo("3")
         } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
-          var ciclo = 4
           nCiclo("4")
         } else if (moment().startOf('day').isSameOrBefore('2019-10-27')) {
-          var ciclo = 5
           nCiclo("5")
         } else if (moment().startOf('day').isSameOrBefore('2019-11-05')) {
-          var ciclo = 6
           nCiclo("6")
         } // No hay ciclo 7 en el 4to Periodo
         break;
@@ -311,7 +291,7 @@ obtenerCiclo()
 //Avisos varios
 if (moment().locale('es').format('L') == "17/06/2019") {
   alert("Hoy se acaba el segundo periodo")
-}else if (ciclo === 7) {
+}else if (false) {
   alert("En este ciclo son Institucionales")
 }
 //Fin Avisos Varios.
