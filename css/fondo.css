@@ -1,6 +1,6 @@
 body{
-  background-image:url('../img/eduardo.jpeg');
+  background-image:url('../img/peli.jpg');
   background-repeat:;
-  background-size:cover;
+  background-size:contain;
   background-position:center;
 }
