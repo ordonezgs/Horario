@@ -33,7 +33,8 @@ var d1 ={
   h4: "Informatica",
   h5: "x2",
   h6: "Química",
-  h7: "Biología"
+  h7: "Biología",
+  u: "Diario"
 }
 var d2 ={
   h1: "Matematicas",
@@ -42,7 +43,8 @@ var d2 ={
   h4: "x2",
   h5: "Física",
   h6: "Química",
-  h7: "x2"
+  h7: "x2",
+  u: "Diario"
 }
 var d3 ={
   h1: "Edu. Física",
@@ -51,7 +53,8 @@ var d3 ={
   h4: "x2",
   h5: "Física",
   h6: "Inglés",
-  h7: "x2"
+  h7: "x2",
+  u: "Edu. Física"
 }
 var d4 ={
   h1: "Dir. Curso",
@@ -60,7 +63,8 @@ var d4 ={
   h4: "Física",
   h5: "x2",
   h6: "Inglés",
-  h7: "x2"
+  h7: "x2",
+  u: "Diario"
 }
 var d5 ={
   h1: "Sociales/Catedra",
@@ -69,7 +73,8 @@ var d5 ={
   h4: "Música",
   h5: "Filosofía",
   h6: "Matematicas",
-  h7: "x2"
+  h7: "x2",
+  u: "Diario"
 }
 var d6 ={
   h1: "Español",
@@ -78,7 +83,8 @@ var d6 ={
   h4: "Etica",
   h5: "Química",
   h6: "Inglés",
-  h7: "x2"
+  h7: "x2",
+  u: "Edu. Física"
 }
 // switch (diact) {
 //   case 1:
@@ -136,6 +142,7 @@ function obtenerHorario (hoy, man){
   document.getElementById("c1l5").innerHTML = hoy.h5
   document.getElementById("c1l6").innerHTML = hoy.h6
   document.getElementById("c1l7").innerHTML = hoy.h7
+  document.getElementById("u1").innerHTML = hoy.u
   document.getElementById("2").innerHTML = "Día " + dian2
   document.getElementById("c2l1").innerHTML = man.h1
   document.getElementById("c2l2").innerHTML = man.h2
@@ -144,6 +151,7 @@ function obtenerHorario (hoy, man){
   document.getElementById("c2l5").innerHTML = man.h5
   document.getElementById("c2l6").innerHTML = man.h6
   document.getElementById("c2l7").innerHTML = man.h7
+  document.getElementById("u2").innerHTML = man.u
   return
 }
   //Definir si es Sábado o Domingo
@@ -157,6 +165,7 @@ function obtenerHorario (hoy, man){
     document.getElementById("c1l5").innerHTML = texto
     document.getElementById("c1l6").innerHTML = texto
     document.getElementById("c1l7").innerHTML = texto
+    document.getElementById("u1").innerHTML = texto
     return
   }
   function cambiarMañana(texto) {
@@ -169,6 +178,7 @@ function obtenerHorario (hoy, man){
     document.getElementById("c2l5").innerHTML = texto
     document.getElementById("c2l6").innerHTML = texto
     document.getElementById("c2l7").innerHTML = texto
+    document.getElementById("u2").innerHTML = texto
     return
   }
   function alerta() {
