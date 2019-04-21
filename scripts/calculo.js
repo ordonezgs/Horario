@@ -158,7 +158,6 @@ function obtenerHorario (hoy, man){
   function cambiarHoy(texto) {
     if(document.URL.indexOf("diab") >= 0){ 
       document.getElementById("E1").innerHTML = texto
-      document.getElementById("E2").innerHTML = texto
     }
     document.getElementById("Hcom1").innerHTML = texto
     document.getElementById("1").innerHTML = texto
@@ -174,7 +173,6 @@ function obtenerHorario (hoy, man){
   }
   function cambiarMañana(texto) {
     if(document.URL.indexOf("diab") >= 0){ 
-      document.getElementById("E1").innerHTML = texto
       document.getElementById("E2").innerHTML = texto
     }
     document.getElementById("Hcom2").innerHTML = texto
