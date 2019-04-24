@@ -310,6 +310,11 @@ if (moment().locale('es').format('L') == "17/06/2019") {
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
+if (moment().locale('es').format('L') == "24/06/2019"){
+  document.getElementById("u2").innerHTML = "Edu. Física"
+}else if(moment().locale('es').format('L') == "25/06/2019"){
+  document.getElementById("u1").innerHTML = "Edu. Física"
+}
 //Fin Avisos Varios.
 
 //
