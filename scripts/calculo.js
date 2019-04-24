@@ -305,12 +305,12 @@ switch (mes >= 03) {
 obtenerCiclo()
 //Fin Obtener Ciclos
 //Avisos varios
-if (moment().locale('es').format('L') == "17/06/2019") {
+if (moment().locale('es').format('L') == "17/04/2019") {
   alert("Hoy se acaba el segundo periodo")
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
-if (moment().locale('es').format('L') == "24/06/2019"){
+if (moment().locale('es').format('L') == "24/04/2019"){
   document.getElementById("u2").innerHTML = "Edu. Física"
 }else if(moment().locale('es').format('L') == "25/06/2019"){
   document.getElementById("u1").innerHTML = "Edu. Física"
