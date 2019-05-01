@@ -191,7 +191,7 @@ function obtenerHorario (hoy, man){
     var mes = Number(moment().format('DD'))
     var dia = Number(moment().format('MM'))
     if (mes == 05 && dia == 01 || mes == 06 && dia == 03 || mes == 06 && dia == 24 || mes == 07 && dia == 01 || mes == 07 && dia == 20 || mes == 08 && dia == 07 || mes == 08 && dia == 19 || mes == 10 && dia == 14 || mes == 11 && dia == 04 || mes == 11 && dia == 11) {
-      
+      console.log("Capo Festivo en función Alerta");
     }else if (!(diaSemana == "Saturday" || diaSemana == "Sunday")) {
       alert("Se necesita arreglo, el horario está desconfigurado")
     }
