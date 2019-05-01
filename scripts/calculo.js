@@ -188,9 +188,14 @@ function obtenerHorario (hoy, man){
     return
   }
   function alerta() {
-    if (!(diaSemana == "Saturday" || diaSemana == "Sunday")) {
+    var mes = Number(moment().format('DD'))
+    var dia = Number(moment().format('MM'))
+    if (mes == 05 && dia == 01 || mes == 06 && dia == 03 || mes == 06 && dia == 24 || mes == 07 && dia == 01 || mes == 07 && dia == 20 || mes == 08 && dia == 07 || mes == 08 && dia == 19 || mes == 10 && dia == 14 || mes == 11 && dia == 04 || mes == 11 && dia == 11) {
+      
+    }else if (!(diaSemana == "Saturday" || diaSemana == "Sunday")) {
       alert("Se necesita arreglo, el horario está desconfigurado")
     }
+    return
   }
   function obtenerCiclo() {
     function nCiclo(texto1) {
@@ -296,10 +301,16 @@ switch (mes >= 03) {
     break;
   default:
   window.onload = function() {
-  alerta();
+  alerta();return
   }
+  if (mes == 06 && dia == 02 || mes == 06 && dia == 23 || mes == 06 && dia == 30 || mes == 07 && dia == 19 || mes == 08 && dia == 06 || mes == 08 && dia == 18 || mes == 10 && dia == 13 || mes == 11 && dia == 03 || mes == 11 && dia == 10) {
+    cambiarMañana("Festivo")
+  }else if (mes == 05 && dia == 01 || mes == 06 && dia == 03 || mes == 06 && dia == 24 || mes == 07 && dia == 01 || mes == 07 && dia == 20 || mes == 08 && dia == 07 || mes == 08 && dia == 19 || mes == 10 && dia == 14 || mes == 11 && dia == 04 || mes == 11 && dia == 11) {
+    cambiarHoy("Festivo")
+  }else{
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
+  }
 }
 //Obtener Ciclos
 obtenerCiclo()
@@ -310,11 +321,11 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
-if (moment().locale('es').format('L') == "24/04/2019"){
-  document.getElementById("u2").innerHTML = "Edu. Física"
-}else if(moment().locale('es').format('L') == "25/06/2019"){
-  document.getElementById("u1").innerHTML = "Edu. Física"
-}
+// if (moment().locale('es').format('L') == "24/04/2019"){
+//   document.getElementById("u2").innerHTML = "Edu. Física"
+// }else if(moment().locale('es').format('L') == "25/06/2019"){
+//   document.getElementById("u1").innerHTML = "Edu. Física"
+// }
 //Fin Avisos Varios.
 
 //
