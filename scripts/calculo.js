@@ -263,7 +263,7 @@ var mes = Number(moment().format('MM'))
 var dia = Number(moment().format('DD'))
 // Define que tipo de variables es   ------>   console.log(typeof mes)
 switch (mes >= 03) {
-  case ((mes == 03 && dia == 27) || (mes == 04 && dia == 04) || (mes == 04 && dia == 22) || (mes == 04 && dia == 30) || (mes == 05 && dia == 09) || (mes == 05 && dia == 22) || (mes == 05 && dia == 30) || (mes == 06 && dia == 10) || (mes == 06 && dia == 18) || (mes == 07 && dia == 18) || (mes == 07 && dia == 26) || (mes == 08 && dia == 05) || (mes == 08 && dia == 14) || (mes == 08 && dia == 23) || (mes == 09 && dia == 02) || (mes == 09 && dia == 16) || (mes == 09 && dia == 24) || (mes == 10 && dia == 10) || (mes == 10 && dia == 18) || (mes == 10 && dia == 28) || (mes == 11 && dia == 06) /*Domingos*/|| (mes == 04 && dia == 07) || (mes == 06 && dia == 28) || (mes == 07 && dia == 28) || (mes == 08 && dia == 25) || (mes == 10 && dia == 20)):
+  case ((mes == 03 && dia == 27) || (mes == 04 && dia == 04) || (mes == 04 && dia == 22) || (mes == 04 && dia == 30) || (mes == 05 && dia == 01) || (mes == 05 && dia == 09) || (mes == 05 && dia == 22) || (mes == 05 && dia == 30) || (mes == 06 && dia == 10) || (mes == 06 && dia == 18) || (mes == 07 && dia == 18) || (mes == 07 && dia == 26) || (mes == 08 && dia == 05) || (mes == 08 && dia == 14) || (mes == 08 && dia == 23) || (mes == 09 && dia == 02) || (mes == 09 && dia == 16) || (mes == 09 && dia == 24) || (mes == 10 && dia == 10) || (mes == 10 && dia == 18) || (mes == 10 && dia == 28) || (mes == 11 && dia == 06) /*Domingos*/|| (mes == 04 && dia == 07) || (mes == 06 && dia == 28) || (mes == 07 && dia == 28) || (mes == 08 && dia == 25) || (mes == 10 && dia == 20)):
     var dian1 = 1
     var dian2 = 2
     obtenerHorario(d1, d2)
@@ -303,18 +303,19 @@ switch (mes >= 03) {
   window.onload = function() {
   alerta();return
   }
-  if (mes == 06 && dia == 02 || mes == 06 && dia == 23 || mes == 06 && dia == 30 || mes == 07 && dia == 19 || mes == 08 && dia == 06 || mes == 08 && dia == 18 || mes == 10 && dia == 13 || mes == 11 && dia == 03 || mes == 11 && dia == 10) {
-    cambiarMañana("Festivo")
-  }else if (mes == 05 && dia == 01 || mes == 06 && dia == 03 || mes == 06 && dia == 24 || mes == 07 && dia == 01 || mes == 07 && dia == 20 || mes == 08 && dia == 07 || mes == 08 && dia == 19 || mes == 10 && dia == 14 || mes == 11 && dia == 04 || mes == 11 && dia == 11) {
-    cambiarHoy("Festivo")
-  }else{
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
-  }
 }
 //Obtener Ciclos
 obtenerCiclo()
 //Fin Obtener Ciclos
+//Cargue de Festivos
+if (mes == 06 && dia == 02 || mes == 06 && dia == 23 || mes == 06 && dia == 30 || mes == 07 && dia == 19 || mes == 08 && dia == 06 || mes == 08 && dia == 18 || mes == 10 && dia == 13 || mes == 11 && dia == 03 || mes == 11 && dia == 10) {
+  cambiarMañana("Festivo")
+}else if (mes == 05 && dia == 01 || mes == 06 && dia == 03 || mes == 06 && dia == 24 || mes == 07 && dia == 01 || mes == 07 && dia == 20 || mes == 08 && dia == 07 || mes == 08 && dia == 19 || mes == 10 && dia == 14 || mes == 11 && dia == 04 || mes == 11 && dia == 11) {
+  cambiarHoy("Festivo")
+}
+//Fin Cargue de Festivos
 //Avisos varios
 if (moment().locale('es').format('L') == "17/04/2019") {
   alert("Hoy se acaba el segundo periodo")
