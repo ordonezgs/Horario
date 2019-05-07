@@ -322,11 +322,11 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
-// if (moment().locale('es').format('L') == "24/04/2019"){
-//   document.getElementById("u2").innerHTML = "Edu. Física"
-// }else if(moment().locale('es').format('L') == "25/06/2019"){
-//   document.getElementById("u1").innerHTML = "Edu. Física"
-// }
+if (moment().locale('es').format('L') == "06/05/2019"){
+  document.getElementById("u2").innerHTML = "Edu. Física"
+}else if(moment().locale('es').format('L') == "07/05/2019"){
+  document.getElementById("u1").innerHTML = "Edu. Física"
+}
 //Fin Avisos Varios.
 
 //
