@@ -156,7 +156,7 @@ function obtenerHorario (hoy, man){
 }
   //Definir si es Sábado o Domingo
   function cambiarHoy(texto) {
-    if(document.URL.indexOf("diab") >= 0){ 
+    if(document.URL.indexOf("diab") >= 0){
       document.getElementById("E1").innerHTML = texto
     }
     document.getElementById("Hcom1").innerHTML = texto
@@ -172,7 +172,7 @@ function obtenerHorario (hoy, man){
     return
   }
   function cambiarMañana(texto) {
-    if(document.URL.indexOf("diab") >= 0){ 
+    if(document.URL.indexOf("diab") >= 0){
       document.getElementById("E2").innerHTML = texto
     }
     document.getElementById("Hcom2").innerHTML = texto
@@ -322,11 +322,71 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
-if (moment().locale('es').format('L') == "06/05/2019"){
-  document.getElementById("u2").innerHTML = "Edu. Física"
-}else if(moment().locale('es').format('L') == "07/05/2019"){
-  document.getElementById("u1").innerHTML = "Edu. Física"
+  //Institucionales:
+  function avisoInstM() {
+    alert("Las Institucionales del día se muestran en color naranja a continuación.")
+    return
+  }
+  if (moment().locale('es').format('L') == "30/05/2019"){//JUEVES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l4").style.color = "orange"
+    document.getElementById("c1l5").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "04/06/2019"){ //VIERNES
+    avisoInstM()
+    document.getElementById("c2l1").style.color = "orange"
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "04/06/2019"){ //MARTES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+    //
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "05/06/2019") {//MIERCOLES
+    avisoInstM()
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+    //
+    document.getElementById("c2l1").style.color = "orange"
+    document.getElementById("c2l3").style.color = "orange"
+    document.getElementById("c2l4").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "06/06/2019") {//JUEVES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l3").style.color = "orange"
+    document.getElementById("c1l4").style.color = "orange"
+    //
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "07/06/2019") {//VIERNES
+    avisoInstM()
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+  }
+  //Fin Institucionales.
+  //No Hay Clase
+if (moment().locale('es').format('L') == "19/05/2019"){
+  cambiarMañana("No hay Clase")
+}else if(moment().locale('es').format('L') == "20/05/2019"){
+  cambiarHoy("No hay Clase")
 }
+  //Fin No hay Clase
+// if (moment().locale('es').format('L') == "06/05/2019"){
+//   document.getElementById("u2").innerHTML = "Edu. Física"
+// }else if(moment().locale('es').format('L') == "07/05/2019"){
+//   document.getElementById("u1").innerHTML = "Edu. Física"
+// }
+// --
 //Fin Avisos Varios.
 
 //
