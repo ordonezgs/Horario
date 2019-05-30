@@ -335,10 +335,10 @@ if (moment().locale('es').format('L') == "17/04/2019") {
     document.getElementById("c1l5").style.color = "orange"
   }else if(moment().locale('es').format('L') == "04/06/2019"){ //VIERNES
     avisoInstM()
-    document.getElementById("c2l1").style.color = "orange"
-    document.getElementById("c2l2").style.color = "orange"
-    document.getElementById("c2l6").style.color = "orange"
-    document.getElementById("c2l7").style.color = "orange"
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
   }else if(moment().locale('es').format('L') == "04/06/2019"){ //MARTES
     avisoInstM()
     document.getElementById("c1l1").style.color = "orange"
