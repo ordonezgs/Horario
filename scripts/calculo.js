@@ -381,11 +381,11 @@ if (moment().locale('es').format('L') == "19/05/2019"){
   cambiarHoy("No hay Clase")
 }
   //Fin No hay Clase
-// if (moment().locale('es').format('L') == "06/05/2019"){
-//   document.getElementById("u2").innerHTML = "Edu. Física"
-// }else if(moment().locale('es').format('L') == "07/05/2019"){
-//   document.getElementById("u1").innerHTML = "Edu. Física"
-// }
+ if (moment().locale('es').format('L') == "06/06/2019"){
+   document.getElementById("u2").innerHTML = "Gala"
+ }else if(moment().locale('es').format('L') == "07/06/2019"){
+   document.getElementById("u1").innerHTML = "Gala"
+ }
 // --
 //Fin Avisos Varios.
 
