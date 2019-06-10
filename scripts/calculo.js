@@ -26,6 +26,8 @@
   // var diact = getDayNumber(new Date(2019, 3, 21), new Date(yyyy, mm1, dd), 6)
 //Fin Codigo Anterior
 //Definir Materias de Día
+//Definimos la variable global
+var cicloAct = null
 var d1 ={
   h1: "Inglés",
   h2: "x2",
@@ -199,7 +201,7 @@ function obtenerHorario (hoy, man){
   }
   function obtenerCiclo() {
     function nCiclo(texto1) {
-      var cicloAct = texto1
+      window.cicloAct = texto1
       console.log("Estamos en el ciclo: " + cicloAct)
       document.getElementById("ciclo").innerHTML = "Estamos en el ciclo: " + texto1
       return
