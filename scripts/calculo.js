@@ -321,8 +321,8 @@ if (mes == 06 && dia == 02 || mes == 06 && dia == 23 || mes == 06 && dia == 30 |
 //Avisos varios
 if (moment().locale('es').format('L') == "17/04/2019") {
   alert("Hoy se acaba el segundo periodo")
-}else if (false) {
-  alert("En este ciclo son Institucionales")
+}else if (cicloAct == "6" || cicloAct == "7") {
+  alert("En este ciclo son las Institucionales")
 }
   //Institucionales MENOR INT:
   // 
