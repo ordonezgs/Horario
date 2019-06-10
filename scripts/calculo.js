@@ -199,6 +199,8 @@ function obtenerHorario (hoy, man){
   }
   function obtenerCiclo() {
     function nCiclo(texto1) {
+      var cicloAct = texto1
+      console.log("Estamos en el ciclo: " + cicloAct)
       document.getElementById("ciclo").innerHTML = "Estamos en el ciclo: " + texto1
       return
     }
