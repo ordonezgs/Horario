@@ -322,70 +322,73 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (false) {
   alert("En este ciclo son Institucionales")
 }
-  //Institucionales:
-  function avisoInstM() {
-    alert("Las Institucionales del día se muestran en color naranja a continuación.")
-    return
-  }
-  if (moment().locale('es').format('L') == "30/05/2019"){//JUEVES
-    avisoInstM()
-    document.getElementById("c1l1").style.color = "orange"
-    document.getElementById("c1l2").style.color = "orange"
-    document.getElementById("c1l4").style.color = "orange"
-    document.getElementById("c1l5").style.color = "orange"
-  }else if(moment().locale('es').format('L') == "04/06/2019"){ //VIERNES
-    avisoInstM()
-    document.getElementById("c1l1").style.color = "orange"
-    document.getElementById("c1l2").style.color = "orange"
-    document.getElementById("c1l6").style.color = "orange"
-    document.getElementById("c1l7").style.color = "orange"
-  }else if(moment().locale('es').format('L') == "04/06/2019"){ //MARTES
-    avisoInstM()
-    document.getElementById("c1l1").style.color = "orange"
-    document.getElementById("c1l2").style.color = "orange"
-    document.getElementById("c1l6").style.color = "orange"
-    document.getElementById("c1l7").style.color = "orange"
-    //
-    document.getElementById("c2l2").style.color = "orange"
-    document.getElementById("c2l6").style.color = "orange"
-    document.getElementById("c2l7").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "05/06/2019") {//MIERCOLES
-    avisoInstM()
-    document.getElementById("c1l2").style.color = "orange"
-    document.getElementById("c1l6").style.color = "orange"
-    document.getElementById("c1l7").style.color = "orange"
-    //
-    document.getElementById("c2l1").style.color = "orange"
-    document.getElementById("c2l3").style.color = "orange"
-    document.getElementById("c2l4").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "06/06/2019") {//JUEVES
-    avisoInstM()
-    document.getElementById("c1l1").style.color = "orange"
-    document.getElementById("c1l3").style.color = "orange"
-    document.getElementById("c1l4").style.color = "orange"
-    //
-    document.getElementById("c2l2").style.color = "orange"
-    document.getElementById("c2l6").style.color = "orange"
-    document.getElementById("c2l7").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "07/06/2019") {//VIERNES
-    avisoInstM()
-    document.getElementById("c1l2").style.color = "orange"
-    document.getElementById("c1l6").style.color = "orange"
-    document.getElementById("c1l7").style.color = "orange"
-  }
-  //Fin Institucionales.
+  //Institucionales MENOR INT:
+  // 
+  // function avisoInstM() {
+  //   alert("Las Institucionales del día se muestran en color naranja a continuación.")
+  //   return
+  // }
+  // if (moment().locale('es').format('L') == "30/05/2019"){//JUEVES
+  //   avisoInstM()
+  //   document.getElementById("c1l1").style.color = "orange"
+  //   document.getElementById("c1l2").style.color = "orange"
+  //   document.getElementById("c1l4").style.color = "orange"
+  //   document.getElementById("c1l5").style.color = "orange"
+  // }else if(moment().locale('es').format('L') == "04/06/2019"){ //VIERNES
+  //   avisoInstM()
+  //   document.getElementById("c1l1").style.color = "orange"
+  //   document.getElementById("c1l2").style.color = "orange"
+  //   document.getElementById("c1l6").style.color = "orange"
+  //   document.getElementById("c1l7").style.color = "orange"
+  // }else if(moment().locale('es').format('L') == "04/06/2019"){ //MARTES
+  //   avisoInstM()
+  //   document.getElementById("c1l1").style.color = "orange"
+  //   document.getElementById("c1l2").style.color = "orange"
+  //   document.getElementById("c1l6").style.color = "orange"
+  //   document.getElementById("c1l7").style.color = "orange"
+  //   //
+  //   document.getElementById("c2l2").style.color = "orange"
+  //   document.getElementById("c2l6").style.color = "orange"
+  //   document.getElementById("c2l7").style.color = "orange"
+  // }else if (moment().locale('es').format('L') == "05/06/2019") {//MIERCOLES
+  //   avisoInstM()
+  //   document.getElementById("c1l2").style.color = "orange"
+  //   document.getElementById("c1l6").style.color = "orange"
+  //   document.getElementById("c1l7").style.color = "orange"
+  //   //
+  //   document.getElementById("c2l1").style.color = "orange"
+  //   document.getElementById("c2l3").style.color = "orange"
+  //   document.getElementById("c2l4").style.color = "orange"
+  // }else if (moment().locale('es').format('L') == "06/06/2019") {//JUEVES
+  //   avisoInstM()
+  //   document.getElementById("c1l1").style.color = "orange"
+  //   document.getElementById("c1l3").style.color = "orange"
+  //   document.getElementById("c1l4").style.color = "orange"
+  //   //
+  //   document.getElementById("c2l2").style.color = "orange"
+  //   document.getElementById("c2l6").style.color = "orange"
+  //   document.getElementById("c2l7").style.color = "orange"
+  // }else if (moment().locale('es').format('L') == "07/06/2019") {//VIERNES
+  //   avisoInstM()
+  //   document.getElementById("c1l2").style.color = "orange"
+  //   document.getElementById("c1l6").style.color = "orange"
+  //   document.getElementById("c1l7").style.color = "orange"
+  // }
+  //Fin Institucionales Menor Int.
   //No Hay Clase
-if (moment().locale('es').format('L') == "19/05/2019"){
-  cambiarMañana("No hay Clase")
-}else if(moment().locale('es').format('L') == "20/05/2019"){
-  cambiarHoy("No hay Clase")
-}
+//if (moment().locale('es').format('L') == "19/05/2019"){
+//  cambiarMañana("No hay Clase")
+//}else if(moment().locale('es').format('L') == "20/05/2019"){
+//  cambiarHoy("No hay Clase")
+//}
   //Fin No hay Clase
- if (moment().locale('es').format('L') == "06/06/2019"){
-   document.getElementById("u2").innerHTML = "Gala"
- }else if(moment().locale('es').format('L') == "07/06/2019"){
-   document.getElementById("u1").innerHTML = "Gala"
- }
+////UNIFORMES 
+//if (moment().locale('es').format('L') == "06/06/2019"){
+//   document.getElementById("u2").innerHTML = "Gala"
+// }else if(moment().locale('es').format('L') == "07/06/2019"){
+//   document.getElementById("u1").innerHTML = "Gala"
+// }
+////UNIFORMES FIN
 // --
 //Fin Avisos Varios.
 
