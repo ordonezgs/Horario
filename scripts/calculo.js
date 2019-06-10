@@ -326,6 +326,11 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (cicloAct == "6") {
   alert("En este ciclo son las Institucionales \n de Menor Intensidad.")
 }else if(cicloAct == "7"){
+  if (moment().locale('es').format('L') == "14/06/2019" || moment().locale('es').format('L') == "17/06/2019"){
+        location.href="inst"
+      }else{
+        console.log("Todo Bien, el sistema se detecta fuera de Institucionales")
+      }
   alert("En este ciclo son las Institucionales \n de Mayor Intensidad.")
 }
   //Institucionales MENOR INT:
