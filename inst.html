@@ -121,8 +121,8 @@
       <tr>
         <td>3:00 - 3:15</td>
         <td>8</td>
-        <td id="c1l7">Normalización</td>
-        <td id="c2l7">Normalización</td>
+        <td id="c1l7">Error</td>
+        <td id="c2l7">Error</td>
       </tr>
     </table>
     <footer>
@@ -179,6 +179,14 @@
   document.getElementById("c2l5").innerHTML = d2.h5
   document.getElementById("c2l6").innerHTML = d2.h6
   document.getElementById("c2l7").innerHTML = d2.h7
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script type="text/javascript">
+      if (moment().locale('es').format('L') == "09/06/2019" || moment().locale('es').format('L') == "17/06/2019"){
+        
+      }else{
+        location.href="dia"
+      }
     </script>
   </body>
 </html>
