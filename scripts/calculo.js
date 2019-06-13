@@ -326,7 +326,7 @@ if (moment().locale('es').format('L') == "17/04/2019") {
 }else if (cicloAct == "6") {
   alert("En este ciclo son las Institucionales \n de Menor Intensidad.")
 }else if(cicloAct == "7"){
-  if (moment().locale('es').format('L') == "13/06/2019" && moment().hour() > 15 || moment().locale('es').format('L') == "14/06/2019" || moment().locale('es').format('L') == "15/06/2019" || moment().locale('es').format('L') == "16/06/2019" || moment().locale('es').format('L') == "17/06/2019" && moment().hour() < 15){
+  if (moment().locale('es').format('L') == "13/06/2019" && moment().hour() > 14 || moment().locale('es').format('L') == "14/06/2019" || moment().locale('es').format('L') == "15/06/2019" || moment().locale('es').format('L') == "16/06/2019" || moment().locale('es').format('L') == "17/06/2019" && moment().hour() < 16){
         location.href="inst"
       }else{
         console.log("Todo Bien, el sistema se detecta fuera de Institucionales")
