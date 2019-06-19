@@ -273,13 +273,13 @@ switch (mes >= 03) {
     obtenerHorario(d1, d2)
     mostrarDatos()
     break;
-  case ((mes == 03 && dia == 28) || (mes == 04 && dia == 08) || (mes == 04 && dia == 23) || (mes == 05 && dia == 02) || (mes == 05 && dia == 10) || (mes == 05 && dia == 23) || (mes == 05 && dia == 31) || (mes == 06 && dia == 11) || (mes == 06 && dia == 19) || (mes == 07 && dia == 19) || (mes == 07 && dia == 29) || (mes == 08 && dia == 06) || (mes == 08 && dia == 15) || (mes == 08 && dia == 26) || (mes == 09 && dia == 03) || (mes == 09 && dia == 17) || (mes == 09 && dia == 25) || (mes == 10 && dia == 03) || (mes == 10 && dia == 21) || (mes == 10 && dia == 29) || (mes == 11 && dia == 07) /*Domingos*/|| (mes == 05 && dia == 15) || (mes == 06 && dia == 03) || (mes == 06 && dia == 21) || (mes == 07 && dia == 21)):
+  case ((mes == 03 && dia == 28) || (mes == 04 && dia == 08) || (mes == 04 && dia == 23) || (mes == 05 && dia == 02) || (mes == 05 && dia == 10) || (mes == 05 && dia == 23) || (mes == 05 && dia == 31) || (mes == 06 && dia == 20) || (mes == 06 && dia == 19) || (mes == 07 && dia == 19) || (mes == 07 && dia == 29) || (mes == 08 && dia == 06) || (mes == 08 && dia == 15) || (mes == 08 && dia == 26) || (mes == 09 && dia == 03) || (mes == 09 && dia == 17) || (mes == 09 && dia == 25) || (mes == 10 && dia == 03) || (mes == 10 && dia == 21) || (mes == 10 && dia == 29) || (mes == 11 && dia == 07) /*Domingos*/|| (mes == 05 && dia == 15) || (mes == 06 && dia == 03) || (mes == 07 && dia == 21)):
     var dian1 = 2
     var dian2 = 3
     obtenerHorario(d2, d3)
     mostrarDatos()
     break;
-  case ((mes == 03 && dia == 29) || (mes == 04 && dia == 09) || (mes == 04 && dia == 24) || (mes == 05 && dia == 03) || (mes == 05 && dia == 16) || (mes == 05 && dia == 24) || (mes == 06 && dia == 04) || (mes == 06 && dia == 12) || (mes == 06 && dia == 20) || (mes == 07 && dia == 22) || (mes == 07 && dia == 30) || (mes == 08 && dia == 08) || (mes == 08 && dia == 16) || (mes == 08 && dia == 27) || (mes == 09 && dia == 04) || (mes == 09 && dia == 18) || (mes == 09 && dia == 26) || (mes == 10 && dia == 04) || (mes == 10 && dia == 22) || (mes == 10 && dia == 30) || (mes == 11 && dia == 08) /*Domingos*/ || (mes == 03 && dia == 31) || (mes == 05 && dia == 05) || (mes == 05 && dia == 26) || (mes == 07 && dia == 14) || (mes == 08 && dia == 19) || (mes == 10 && dia == 14) || (mes == 11 && dia == 11)):
+  case ((mes == 03 && dia == 29) || (mes == 04 && dia == 09) || (mes == 04 && dia == 24) || (mes == 05 && dia == 03) || (mes == 05 && dia == 16) || (mes == 05 && dia == 24) || (mes == 06 && dia == 04) || (mes == 06 && dia == 12) || (mes == 06 && dia == 21) || (mes == 07 && dia == 22) || (mes == 07 && dia == 30) || (mes == 08 && dia == 08) || (mes == 08 && dia == 16) || (mes == 08 && dia == 27) || (mes == 09 && dia == 04) || (mes == 09 && dia == 18) || (mes == 09 && dia == 26) || (mes == 10 && dia == 04) || (mes == 10 && dia == 22) || (mes == 10 && dia == 30) || (mes == 11 && dia == 08) /*Domingos*/ || (mes == 03 && dia == 31) || (mes == 05 && dia == 05) || (mes == 05 && dia == 26) || (mes == 07 && dia == 14) || (mes == 08 && dia == 19) || (mes == 10 && dia == 14) || (mes == 11 && dia == 11)):
     var dian1 = 3
     var dian2 = 4
     obtenerHorario(d3, d4)
@@ -387,12 +387,12 @@ if (moment().locale('es').format('L') == "17/04/2019") {
   // }
   //Fin Institucionales Menor Int.
   //No Hay Clase
-//if (moment().locale('es').format('L') == "19/05/2019"){
-//  cambiarMañana("No hay Clase")
-//}else if(moment().locale('es').format('L') == "20/05/2019"){
-//  cambiarHoy("No hay Clase")
-//}
-  //Fin No hay Clase
+if (moment().locale('es').format('L') == "19/06/2019"){
+ cambiarMañana("No hay Clase")
+}else if(moment().locale('es').format('L') == "20/06/2019"){
+ cambiarHoy("No hay Clase")
+}
+//Fin No hay Clase
 ////UNIFORMES 
 //if (moment().locale('es').format('L') == "06/06/2019"){
 //   document.getElementById("u2").innerHTML = "Gala"
