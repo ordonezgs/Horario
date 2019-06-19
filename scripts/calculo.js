@@ -207,8 +207,8 @@ function obtenerHorario (hoy, man){
       return
     }
     switch (true) {
-      case (mes <= 6):
-        //Periodo 2
+      case (mes <= 9):
+        //Periodo 3
         if (moment().startOf('day').isSameOrBefore('2019-07-17')) {
           nCiclo("1")
         } else if (moment().startOf('day').isSameOrBefore('2019-07-25')) {
