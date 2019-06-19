@@ -209,19 +209,19 @@ function obtenerHorario (hoy, man){
     switch (true) {
       case (mes <= 6):
         //Periodo 2
-        if (moment().startOf('day').isSameOrBefore('2019-04-21')) {
+        if (moment().startOf('day').isSameOrBefore('2019-07-17')) {
           nCiclo("1")
-        } else if (moment().startOf('day').isSameOrBefore('2019-04-29')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-07-25')) {
           nCiclo("2")
-        } else if (moment().startOf('day').isSameOrBefore('2019-05-08')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-02')) {
           nCiclo("3")
-        } else if (moment().startOf('day').isSameOrBefore('2019-05-21')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-13')) {
           nCiclo("4")
-        } else if (moment().startOf('day').isSameOrBefore('2019-05-29')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-22')) {
           nCiclo("5")
-        } else if (moment().startOf('day').isSameOrBefore('2019-06-09')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-08-30')) {
           nCiclo("6")
-        } else if (moment().startOf('day').isSameOrBefore('2019-06-17')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-09-09')) {
           nCiclo("7")
         }
         break;
