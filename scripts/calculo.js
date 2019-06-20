@@ -394,11 +394,12 @@ if (moment().locale('es').format('L') == "19/06/2019"){
 }
 //Fin No hay Clase
 ////UNIFORMES 
-//if (moment().locale('es').format('L') == "06/06/2019"){
-//   document.getElementById("u2").innerHTML = "Gala"
-// }else if(moment().locale('es').format('L') == "07/06/2019"){
-//   document.getElementById("u1").innerHTML = "Gala"
-// }
+if (moment().locale('es').format('L') == "20/06/2019"){
+   document.getElementById("u2").innerHTML = "Jean Day"
+   alert("Mañana es de Particular.")
+ }else if(moment().locale('es').format('L') == "21/06/2019"){
+   document.getElementById("u1").innerHTML = "Jean Day"
+ }
 ////UNIFORMES FIN
 // --
 //Fin Avisos Varios.
