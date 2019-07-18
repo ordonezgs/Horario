@@ -394,11 +394,11 @@ if (moment().locale('es').format('L') == "19/06/2019"){
 }
 //Fin No hay Clase
 ////UNIFORMES 
-if (moment().locale('es').format('L') == "20/06/2019"){
-   document.getElementById("u2").innerHTML = "Jean Day"
+if (moment().locale('es').format('L') == "18/07/2019"){
+   document.getElementById("u2").innerHTML = "Edu. Física"
    alert("Mañana es de Particular.")
- }else if(moment().locale('es').format('L') == "21/06/2019"){
-   document.getElementById("u1").innerHTML = "Jean Day"
+ }else if(moment().locale('es').format('L') == "19/07/2019"){
+   document.getElementById("u1").innerHTML = "Edu. Física"
  }
 ////UNIFORMES FIN
 // --
