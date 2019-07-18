@@ -396,7 +396,7 @@ if (moment().locale('es').format('L') == "19/06/2019"){
 ////UNIFORMES 
 if (moment().locale('es').format('L') == "18/07/2019"){
    document.getElementById("u2").innerHTML = "Edu. Física"
-   alert("Mañana es de Particular.")
+   //alert("Mañana es de Particular.")
  }else if(moment().locale('es').format('L') == "19/07/2019"){
    document.getElementById("u1").innerHTML = "Edu. Física"
  }
