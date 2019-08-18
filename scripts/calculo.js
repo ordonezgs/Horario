@@ -135,6 +135,12 @@ function mostrarDatos() {
   document.getElementById("dia").innerHTML = dian2
   return
 }
+function mostrarDatosOffl() {
+  var hoy = moment().locale('es').format('L')
+  document.getElementById("fecha").innerHTML = hoy
+  document.getElementById("dia").innerHTML = "No Aplica"
+  return
+}
 function obtenerHorario (hoy, man){
   document.getElementById("1").innerHTML = "Día " + dian1
   document.getElementById("c1l1").innerHTML = hoy.h1
@@ -309,6 +315,7 @@ switch (mes >= 03) {
   }
   cambiarHoy("Desconfigurado")
   cambiarMañana("Desconfigurado")
+  mostrarDatosOffl()
 }
 //Obtener Ciclos
 obtenerCiclo()
