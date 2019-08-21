@@ -341,57 +341,63 @@ if (moment().locale('es').format('L') == "17/04/2019") {
   alert("En este ciclo son las Institucionales \n de Mayor Intensidad.")
 }
   //Institucionales MENOR INT:
-  // 
-  // function avisoInstM() {
-  //   alert("Las Institucionales del día se muestran en color naranja a continuación.")
-  //   return
-  // }
-  // if (moment().locale('es').format('L') == "30/05/2019"){//JUEVES
-  //   avisoInstM()
-  //   document.getElementById("c1l1").style.color = "orange"
-  //   document.getElementById("c1l2").style.color = "orange"
-  //   document.getElementById("c1l4").style.color = "orange"
-  //   document.getElementById("c1l5").style.color = "orange"
-  // }else if(moment().locale('es').format('L') == "04/06/2019"){ //VIERNES
-  //   avisoInstM()
-  //   document.getElementById("c1l1").style.color = "orange"
-  //   document.getElementById("c1l2").style.color = "orange"
-  //   document.getElementById("c1l6").style.color = "orange"
-  //   document.getElementById("c1l7").style.color = "orange"
-  // }else if(moment().locale('es').format('L') == "04/06/2019"){ //MARTES
-  //   avisoInstM()
-  //   document.getElementById("c1l1").style.color = "orange"
-  //   document.getElementById("c1l2").style.color = "orange"
-  //   document.getElementById("c1l6").style.color = "orange"
-  //   document.getElementById("c1l7").style.color = "orange"
-  //   //
-  //   document.getElementById("c2l2").style.color = "orange"
-  //   document.getElementById("c2l6").style.color = "orange"
-  //   document.getElementById("c2l7").style.color = "orange"
-  // }else if (moment().locale('es').format('L') == "05/06/2019") {//MIERCOLES
-  //   avisoInstM()
-  //   document.getElementById("c1l2").style.color = "orange"
-  //   document.getElementById("c1l6").style.color = "orange"
-  //   document.getElementById("c1l7").style.color = "orange"
-  //   //
-  //   document.getElementById("c2l1").style.color = "orange"
-  //   document.getElementById("c2l3").style.color = "orange"
-  //   document.getElementById("c2l4").style.color = "orange"
-  // }else if (moment().locale('es').format('L') == "06/06/2019") {//JUEVES
-  //   avisoInstM()
-  //   document.getElementById("c1l1").style.color = "orange"
-  //   document.getElementById("c1l3").style.color = "orange"
-  //   document.getElementById("c1l4").style.color = "orange"
-  //   //
-  //   document.getElementById("c2l2").style.color = "orange"
-  //   document.getElementById("c2l6").style.color = "orange"
-  //   document.getElementById("c2l7").style.color = "orange"
-  // }else if (moment().locale('es').format('L') == "07/06/2019") {//VIERNES
-  //   avisoInstM()
-  //   document.getElementById("c1l2").style.color = "orange"
-  //   document.getElementById("c1l6").style.color = "orange"
-  //   document.getElementById("c1l7").style.color = "orange"
-  // }
+    
+  function avisoInstM() {
+    alert("Las Institucionales del día se muestran en color naranja a continuación.")
+    return
+  }
+  if (moment().locale('es').format('L') == "23/08/2019"){//VIERNES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l4").style.color = "orange"
+    document.getElementById("c1l5").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "26/08/2019"){ //LUNES
+    avisoInstM()
+    document.getElementById("c1l2").style.color = "orange"
+    //
+    document.getElementById("c2l1").style.color = "orange"
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "27/08/2019"){ //MARTES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+    //
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "28/08/2019") {//MIERCOLES
+    avisoInstM()
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+    //
+    document.getElementById("c2l1").style.color = "orange"
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l3").style.color = "orange"
+    document.getElementById("c2l4").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "29/08/2019") {//JUEVES
+    avisoInstM()
+    document.getElementById("c1l1").style.color = "orange"
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l3").style.color = "orange"
+    document.getElementById("c1l4").style.color = "orange"
+    //
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l4").style.color = "orange"
+    document.getElementById("c2l6").style.color = "orange"
+    document.getElementById("c2l7").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "30/08/2019") {//VIERNES
+    avisoInstM()
+    document.getElementById("c1l2").style.color = "orange"
+    document.getElementById("c1l4").style.color = "orange"
+    document.getElementById("c1l6").style.color = "orange"
+    document.getElementById("c1l7").style.color = "orange"
+  }
   //Fin Institucionales Menor Int.
   //No Hay Clase
 if (moment().locale('es').format('L') == "19/06/2019"){
