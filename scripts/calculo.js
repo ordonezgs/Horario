@@ -328,8 +328,8 @@ if (mes == 06 && dia == 02 || mes == 06 && dia == 23 || mes == 06 && dia == 30 |
 }
 //Fin Cargue de Festivos
 //Avisos varios
-if (moment().locale('es').format('L') == "17/04/2019") {
-  alert("Hoy se acaba el segundo periodo")
+if (moment().locale('es').format('L') == "09/09/2019") {
+  alert("Hoy se acaba el Tercer periodo. ¯\_(ツ)_/¯ ")
 }else if (cicloAct == "6") {
   alert("En este ciclo son las Institucionales \n de Menor Intensidad.")
 }else if(cicloAct == "7"){
