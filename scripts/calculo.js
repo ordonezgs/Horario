@@ -352,6 +352,9 @@ if (moment().locale('es').format('L') == "09/09/2019") {
     document.getElementById("c1l2").style.color = "orange"
     document.getElementById("c1l4").style.color = "orange"
     document.getElementById("c1l5").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "25/08/2019"){ //DOMINGO
+    avisoInstM()
+    document.getElementById("c2l2").style.color = "orange"
   }else if(moment().locale('es').format('L') == "26/08/2019"){ //LUNES
     avisoInstM()
     document.getElementById("c1l2").style.color = "orange"
