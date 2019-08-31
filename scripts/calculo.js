@@ -131,7 +131,10 @@ var d6 ={
 //Definiendo Funciones.
 function mostrarDatos() {
   var hoy = moment().locale('es').format('L')
-  if (moment().format('dddd') == "Sunday" || moment().format('dddd') == "Friday"){
+  if (moment().format('dddd') == "Sunday"){
+    document.getElementById("fecha").innerHTML = hoy
+    document.getElementById("dia").innerHTML = dian2
+  }else if(moment().format('dddd') == "Friday"){
     document.getElementById("fecha").innerHTML = hoy
   }else{
     document.getElementById("fecha").innerHTML = hoy + " Correspondiente a día " + dian1
