@@ -220,7 +220,7 @@ function obtenerHorario (hoy, man){
       return
     }
     switch (true) {
-      case (mes <= 9):
+      case (mes <= 8):
         //Periodo 3
         if (moment().startOf('day').isSameOrBefore('2019-07-17')) {
           nCiclo("1")
@@ -256,7 +256,7 @@ function obtenerHorario (hoy, man){
           nCiclo("7")
         }
         break;
-      case (mes <= 11):
+      case (mes >= 9):
         //Periodo 4
         if (moment().startOf('day').isSameOrBefore('2019-09-23')) {
           nCiclo("1")
@@ -264,11 +264,14 @@ function obtenerHorario (hoy, man){
           nCiclo("2")
         } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
           nCiclo("3")
-        } else if (moment().startOf('day').isSameOrBefore('2019-10-17')) {
+        } else if (moment().startOf('day').isSameOrBefore('2019-10-25')) {
           nCiclo("4")
-        } else if (moment().startOf('day').isSameOrBefore('2019-10-27')) {
-          nCiclo("5")
         } else if (moment().startOf('day').isSameOrBefore('2019-11-05')) {
+          nCiclo("5")
+          if (moment().startOf('day').isSameOrBefore('2019-10-27') || moment().startOf('day').isSameOrBefore('2019-10-28')){
+            alert("Este Periodo solo tiene 6 ciclos, ya vamos en el 5 por lo que deberían de ser las institucionales de menor intensidad. ¡OJO!")
+          }
+        } else if (moment().startOf('day').isSameOrBefore('2019-11-14')) {
           nCiclo("6")
         } // No hay ciclo 7 en el 4to Periodo
         break;
