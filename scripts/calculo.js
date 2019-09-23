@@ -313,7 +313,7 @@ switch (mes >= 03) {
     obtenerHorario(d5, d6)
     mostrarDatos()
     break;
-  case ((mes == 04 && dia == 03) || (mes == 04 && dia == 12) || (mes == 04 && dia == 29) || (mes == 05 && dia == 08) || (mes == 05 && dia == 21) || (mes == 05 && dia == 29) || (mes == 06 && dia == 07) || (mes == 06 && dia == 17) || (mes == 07 && dia == 17) || (mes == 07 && dia == 25) || (mes == 08 && dia == 02) || (mes == 08 && dia == 13) || (mes == 08 && dia == 22) || (mes == 08 && dia == 30) || (mes == 09 && dia == 09) || (mes == 09 && dia == 16) || (mes == 10 && dia == 01) || (mes == 10 && dia == 17) || (mes == 10 && dia == 25) || (mes == 11 && dia == 05) || (mes == 11 && dia == 14) /*Domingos*/|| (mes == 04 && dia == 21) || (mes == 06 && dia == 09) || (mes == 08 && dia == 04) || (mes == 09 && dia == 01) || (mes == 09 && dia == 15) || (mes == 10 && dia == 27)) :
+  case ((mes == 04 && dia == 03) || (mes == 04 && dia == 12) || (mes == 04 && dia == 29) || (mes == 05 && dia == 08) || (mes == 05 && dia == 21) || (mes == 05 && dia == 29) || (mes == 06 && dia == 07) || (mes == 06 && dia == 17) || (mes == 07 && dia == 17) || (mes == 07 && dia == 25) || (mes == 08 && dia == 02) || (mes == 08 && dia == 13) || (mes == 08 && dia == 22) || (mes == 08 && dia == 30) || (mes == 09 && dia == 09) || (mes == 09 && dia == 16) || (mes == 09 && dia == 23) || (mes == 10 && dia == 01) || (mes == 10 && dia == 17) || (mes == 10 && dia == 25) || (mes == 11 && dia == 05) || (mes == 11 && dia == 14) /*Domingos*/|| (mes == 04 && dia == 21) || (mes == 06 && dia == 09) || (mes == 08 && dia == 04) || (mes == 09 && dia == 01) || (mes == 09 && dia == 15) || (mes == 10 && dia == 27)) :
     var dian1 = 6
     var dian2 = 1
     obtenerHorario(d6, d1)
