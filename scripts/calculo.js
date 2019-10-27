@@ -340,9 +340,9 @@ if (mes == 11 && dia == 03 || mes == 11 && dia == 10) {
 //Avisos varios
 if (moment().locale('es').format('L') == "14/11/2019") {
   alert("Hoy se acaba el Cuarto periodo. Exitos en tu vida ¯\_(ツ)_/¯ ")
-}else if (cicloAct == "6") {
+}else if (cicloAct == "5") {
   alert("En este ciclo son las Institucionales \n de Menor Intensidad.")
-}else if(cicloAct == "7"){
+}else if(cicloAct == "6"){
   if (moment().locale('es').format('L') == "05/09/2019" && moment().hour() > 14 || moment().locale('es').format('L') == "06/09/2019" || moment().locale('es').format('L') == "07/09/2019" || moment().locale('es').format('L') == "08/09/2019" || moment().locale('es').format('L') == "09/09/2019" && moment().hour() < 16){
         location.href="inst"
       }else{
@@ -356,24 +356,29 @@ if (moment().locale('es').format('L') == "14/11/2019") {
     alert("Las Institucionales del día se muestran en color naranja a continuación.")
     return
   }
-  if (moment().locale('es').format('L') == "23/08/2019"){//VIERNES
+  if (moment().locale('es').format('L') == "27/10/2019"){//DOMINGO
+    avisoInstM()
+    document.getElementById("c2l1").style.color = "orange"
+    document.getElementById("c2l2").style.color = "orange"
+    document.getElementById("c2l4").style.color = "orange"
+    document.getElementById("c2l5").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "28/10/2019"){ //LUNES
     avisoInstM()
     document.getElementById("c1l1").style.color = "orange"
     document.getElementById("c1l2").style.color = "orange"
     document.getElementById("c1l4").style.color = "orange"
     document.getElementById("c1l5").style.color = "orange"
-  }else if(moment().locale('es').format('L') == "25/08/2019"){ //DOMINGO
+    //
+    document.getElementById("c2l2").style.color = "orange"
+  }else if(moment().locale('es').format('L') == "29/10/2019"){ //MARTES
     avisoInstM()
     document.getElementById("c2l2").style.color = "orange"
-  }else if(moment().locale('es').format('L') == "26/08/2019"){ //LUNES
-    avisoInstM()
-    document.getElementById("c1l2").style.color = "orange"
     //
     document.getElementById("c2l1").style.color = "orange"
     document.getElementById("c2l2").style.color = "orange"
     document.getElementById("c2l6").style.color = "orange"
     document.getElementById("c2l7").style.color = "orange"
-  }else if(moment().locale('es').format('L') == "27/08/2019"){ //MARTES
+  }else if(moment().locale('es').format('L') == "30/10/2019"){ //MIERCOLES
     avisoInstM()
     document.getElementById("c1l1").style.color = "orange"
     document.getElementById("c1l2").style.color = "orange"
@@ -383,7 +388,7 @@ if (moment().locale('es').format('L') == "14/11/2019") {
     document.getElementById("c2l2").style.color = "orange"
     document.getElementById("c2l6").style.color = "orange"
     document.getElementById("c2l7").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "28/08/2019") {//MIERCOLES
+  }else if (moment().locale('es').format('L') == "31/10/2019") {//JUEVES
     avisoInstM()
     document.getElementById("c1l2").style.color = "orange"
     document.getElementById("c1l6").style.color = "orange"
@@ -393,18 +398,21 @@ if (moment().locale('es').format('L') == "14/11/2019") {
     document.getElementById("c2l2").style.color = "orange"
     document.getElementById("c2l3").style.color = "orange"
     document.getElementById("c2l4").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "29/08/2019") {//JUEVES
+    document.getElementById("c2l5").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "01/11/2019") {//VIERNES
     avisoInstM()
     document.getElementById("c1l1").style.color = "orange"
     document.getElementById("c1l2").style.color = "orange"
     document.getElementById("c1l3").style.color = "orange"
     document.getElementById("c1l4").style.color = "orange"
-    //
+    document.getElementById("c1l5").style.color = "orange"
+  }else if (moment().locale('es').format('L') == "04/11/2019") {//LUNES FEST
+    avisoInstM()
     document.getElementById("c2l2").style.color = "orange"
     document.getElementById("c2l4").style.color = "orange"
     document.getElementById("c2l6").style.color = "orange"
     document.getElementById("c2l7").style.color = "orange"
-  }else if (moment().locale('es').format('L') == "30/08/2019") {//VIERNES
+  }else if (moment().locale('es').format('L') == "05/11/2019") {//MARTES
     avisoInstM()
     document.getElementById("c1l2").style.color = "orange"
     document.getElementById("c1l4").style.color = "orange"
