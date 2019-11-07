@@ -348,7 +348,7 @@ if (moment().locale('es').format('L') == "14/11/2019") {
       }else{
         console.log("Todo Bien, el sistema se detecta fuera de Institucionales")
       }
-  alert("En este ciclo son las Institucionales \n de Mayor Intensidad.")
+  console.log("En este ciclo son las Institucionales \n de Mayor Intensidad.")
 }
   //Institucionales MENOR INT:
     
