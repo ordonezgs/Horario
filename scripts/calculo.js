@@ -428,10 +428,10 @@ if (moment().locale('es').format('L') == "19/06/2019"){
 }
 //Fin No hay Clase
 ////UNIFORMES 
-if (moment().locale('es').format('L') == "24/09/2019"){
+if (moment().locale('es').format('L') == "06/11/2019"){
    document.getElementById("u2").innerHTML = "Edu. Física"
    alert("Mañana es de Gala.")
- }else if(moment().locale('es').format('L') == "25/07/2019"){
+ }else if(moment().locale('es').format('L') == "07/11/2019"){
    document.getElementById("u1").innerHTML = "Edu. Física"
  }
 ////UNIFORMES FIN
